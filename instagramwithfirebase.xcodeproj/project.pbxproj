@@ -12,12 +12,20 @@
 		1D47CD3E2208273000481D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D47CD3C2208273000481D6C /* Main.storyboard */; };
 		1D47CD402208273500481D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D47CD3F2208273500481D6C /* Assets.xcassets */; };
 		1D47CD432208273500481D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D47CD412208273500481D6C /* LaunchScreen.storyboard */; };
+		1D89126022192FB200E97557 /* HeaderCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D89125F22192FB200E97557 /* HeaderCV.swift */; };
+		1D8912622219303100E97557 /* pictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8912612219303100E97557 /* pictureCell.swift */; };
+		1D891264221959AB00E97557 /* HomeCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D891263221959AB00E97557 /* HomeCVC.swift */; };
+		1D8912662219654C00E97557 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8912652219654C00E97557 /* UserInfo.swift */; };
+		1DA72D6F221E5969001A8C34 /* UploadPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA72D6E221E5969001A8C34 /* UploadPostVC.swift */; };
 		1DB6306A22094A7A00159B6E /* DBservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB6306922094A7A00159B6E /* DBservice.swift */; };
 		1DB63075220A990F00159B6E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB63074220A990F00159B6E /* SignInViewController.swift */; };
 		1DB63077220A992100159B6E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB63076220A992100159B6E /* SignUpViewController.swift */; };
 		1DB63079220A993200159B6E /* ResetPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB63078220A993200159B6E /* ResetPWViewController.swift */; };
 		1DB6307B220AAAA600159B6E /* OptionSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB6307A220AAAA600159B6E /* OptionSignInViewController.swift */; };
 		1DB6307D220C28FD00159B6E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB6307C220C28FD00159B6E /* AuthService.swift */; };
+		1DB6307F220FF63F00159B6E /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB6307E220FF63F00159B6E /* InsetTextField.swift */; };
+		1DB630812211741500159B6E /* HideKeyboardByTapingV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB630802211741500159B6E /* HideKeyboardByTapingV.swift */; };
+		1DB6308322139BD500159B6E /* CreateAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB6308222139BD500159B6E /* CreateAlerts.swift */; };
 		F2226908A9688F1771DA1C6C /* Pods_instagramwithfirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632803ED5B48C80D0A7DF9FC /* Pods_instagramwithfirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,12 +37,20 @@
 		1D47CD3F2208273500481D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D47CD422208273500481D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D47CD442208273500481D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D89125F22192FB200E97557 /* HeaderCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCV.swift; sourceTree = "<group>"; };
+		1D8912612219303100E97557 /* pictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pictureCell.swift; sourceTree = "<group>"; };
+		1D891263221959AB00E97557 /* HomeCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCVC.swift; sourceTree = "<group>"; };
+		1D8912652219654C00E97557 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		1DA72D6E221E5969001A8C34 /* UploadPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostVC.swift; sourceTree = "<group>"; };
 		1DB6306922094A7A00159B6E /* DBservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBservice.swift; sourceTree = "<group>"; };
 		1DB63074220A990F00159B6E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1DB63076220A992100159B6E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1DB63078220A993200159B6E /* ResetPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPWViewController.swift; sourceTree = "<group>"; };
 		1DB6307A220AAAA600159B6E /* OptionSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSignInViewController.swift; sourceTree = "<group>"; };
 		1DB6307C220C28FD00159B6E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		1DB6307E220FF63F00159B6E /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		1DB630802211741500159B6E /* HideKeyboardByTapingV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardByTapingV.swift; sourceTree = "<group>"; };
+		1DB6308222139BD500159B6E /* CreateAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAlerts.swift; sourceTree = "<group>"; };
 		632803ED5B48C80D0A7DF9FC /* Pods_instagramwithfirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagramwithfirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7114A98712ACF9099990903 /* Pods-instagramwithfirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramwithfirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagramwithfirebase/Pods-instagramwithfirebase.release.xcconfig"; sourceTree = "<group>"; };
 		FF13BA9B74B3D3948F2BD862 /* Pods-instagramwithfirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramwithfirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagramwithfirebase/Pods-instagramwithfirebase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB6307322098D9900159B6E /* View */,
-				1DB6307222098D7F00159B6E /* Modal */,
+				1DB6307222098D7F00159B6E /* Model */,
 				1DB6307122098D7500159B6E /* Controller */,
 				1DB6306822094A3C00159B6E /* Services */,
 				1D47CD382208273000481D6C /* AppDelegate.swift */,
@@ -103,20 +119,28 @@
 				1DB63076220A992100159B6E /* SignUpViewController.swift */,
 				1DB63078220A993200159B6E /* ResetPWViewController.swift */,
 				1DB6307A220AAAA600159B6E /* OptionSignInViewController.swift */,
+				1D89125F22192FB200E97557 /* HeaderCV.swift */,
+				1D891263221959AB00E97557 /* HomeCVC.swift */,
+				1DA72D6E221E5969001A8C34 /* UploadPostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		1DB6307222098D7F00159B6E /* Modal */ = {
+		1DB6307222098D7F00159B6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1D8912652219654C00E97557 /* UserInfo.swift */,
 			);
-			path = Modal;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1DB6307322098D9900159B6E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1DB6307E220FF63F00159B6E /* InsetTextField.swift */,
+				1DB630802211741500159B6E /* HideKeyboardByTapingV.swift */,
+				1DB6308222139BD500159B6E /* CreateAlerts.swift */,
+				1D8912612219303100E97557 /* pictureCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,12 +289,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8912622219303100E97557 /* pictureCell.swift in Sources */,
 				1DB63079220A993200159B6E /* ResetPWViewController.swift in Sources */,
 				1DB6306A22094A7A00159B6E /* DBservice.swift in Sources */,
+				1D89126022192FB200E97557 /* HeaderCV.swift in Sources */,
+				1D891264221959AB00E97557 /* HomeCVC.swift in Sources */,
 				1DB6307B220AAAA600159B6E /* OptionSignInViewController.swift in Sources */,
+				1DA72D6F221E5969001A8C34 /* UploadPostVC.swift in Sources */,
+				1DB6307F220FF63F00159B6E /* InsetTextField.swift in Sources */,
+				1DB6308322139BD500159B6E /* CreateAlerts.swift in Sources */,
 				1D47CD392208273000481D6C /* AppDelegate.swift in Sources */,
+				1DB630812211741500159B6E /* HideKeyboardByTapingV.swift in Sources */,
 				1DB63077220A992100159B6E /* SignUpViewController.swift in Sources */,
 				1DB63075220A990F00159B6E /* SignInViewController.swift in Sources */,
+				1D8912662219654C00E97557 /* UserInfo.swift in Sources */,
 				1DB6307D220C28FD00159B6E /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

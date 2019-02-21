@@ -25,6 +25,7 @@ class AuthService {
                 return
             }
             
+            // create a user data (Dictionary Data type)
             let userData = ["provider": user.providerID, "email": user.email]
             // create a database for user
             DBservice.instance.createDBUser(uid: user.uid, userData: userData as Dictionary<String, Any>)
@@ -42,4 +43,16 @@ class AuthService {
             loginComplete(true, nil)
         }
     }
+    
+    func resetPassword(withEmail email: String, resetComplete: @escaping(_ status: Bool, _ error: Error?) -> ()){
+        
+        Auth.auth().sendPasswordReset(withEmail: email, actionCodeSettings: ActionCodeSettings()) { (error) in
+            if error != nil{
+                resetComplete(false, error)
+            }else{
+                resetComplete(true, nil)
+            }
+        }
+    }
+   
 }
