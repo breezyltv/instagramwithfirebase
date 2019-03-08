@@ -49,9 +49,9 @@ class DBservice{
         _REF_POSTS.childByAutoId().updateChildValues(postData)
     }
     
-    //upload images
-    func uploadImg(uid: String, imgData: UIImage){
-       
+    //upload images and get URL
+    func uploadImg(imgData: UIImage) -> String{
+        var imgUrl : String = ""
         _REF_STORAGE.putData(imgData.jpegData(compressionQuality: 1.0)!, metadata: nil) { (metadata, error) in
             if(error != nil) {
                 print("Could not upload img!")
@@ -61,14 +61,17 @@ class DBservice{
             //get a img URL after uploaded
             self._REF_STORAGE.downloadURL(completion: { (url, error) in
                 if(error != nil) {
+                    print("Could not get img URL!")
                     print(String(describing: error?.localizedDescription))
                     return
                 }
                 //print("upload url: \(url!.absoluteString)")
                 //update profile img URL to user
-                DBservice.instance.createDBUser(uid: uid, userData: ["profileImgURL": url!.absoluteString])
+                //DBservice.instance.createDBUser(uid: uid, userData: ["profileImgURL": url!.absoluteString])
+                imgUrl = url!.absoluteString
             })
         }
+        return imgUrl
     }
     
     func getUserInfo(uid: String, handler: @escaping (_ userInfo: UserInfo) -> ()){

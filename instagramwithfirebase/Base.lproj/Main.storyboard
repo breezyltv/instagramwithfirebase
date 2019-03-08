@@ -581,7 +581,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwH-nX-C82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3888.8000000000002" y="-276.61169415292358"/>
+            <point key="canvasLocation" x="3695" y="-593"/>
         </scene>
         <!--Item-->
         <scene sceneID="v9l-y9-kEy">
@@ -600,19 +600,20 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95F-iu-B6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2949.5999999999999" y="-276.61169415292358"/>
+            <point key="canvasLocation" x="2950" y="-593"/>
         </scene>
         <!--Upload PostVC-->
         <scene sceneID="pyc-ja-tFb">
             <objects>
                 <viewController storyboardIdentifier="UploadPostVC" id="EMY-Ct-brK" customClass="UploadPostVC" customModule="instagramwithfirebase" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1uJ-wW-GRl">
+                    <view key="view" contentMode="scaleToFill" id="1uJ-wW-GRl" customClass="HideKeyboardByTapingV" customModule="instagramwithfirebase" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dtp-cU-wgK">
                                 <rect key="frame" x="16" y="95" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Write a caption..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="85C-g2-1aA">
                                 <rect key="frame" x="114" y="95" width="237" height="90"/>
@@ -627,12 +628,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="rtF-dJ-Cs7"/>
                     <connections>
+                        <outlet property="captionTxt" destination="85C-g2-1aA" id="Zct-8w-w0q"/>
                         <outlet property="picImg" destination="dtp-cU-wgK" id="fAc-CG-1bS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KyU-Jh-dHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3888.8000000000002" y="402.54872563718146"/>
+            <point key="canvasLocation" x="3694" y="90"/>
         </scene>
         <!--Item-->
         <scene sceneID="Xws-FK-KQT">
@@ -651,7 +653,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CdI-X8-iEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2950" y="403"/>
+            <point key="canvasLocation" x="2950" y="90"/>
         </scene>
     </scenes>
     <resources>

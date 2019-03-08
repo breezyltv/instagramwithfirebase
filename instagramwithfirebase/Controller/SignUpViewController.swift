@@ -68,11 +68,11 @@ class SignUpViewController: UIViewController {
                         print("Successfully registed user")
                     })
                     
-                    //upload image profile
-                    DBservice.instance.uploadImg(uid: (Auth.auth().currentUser?.uid)!, imgData: self.imgUpload.image!)
-                    
+                    //upload image profile and get URL
+                    let imgUrl = DBservice.instance.uploadImg(imgData: self.imgUpload.image!)
+
                     //update user information
-                    let userInfo = ["username": username![0],"fullname": self.fullnameTxt.text!, "bio":self.bioTxt.text!, "web":self.webTxt.text!]
+                    let userInfo = ["username": username![0],"fullname": self.fullnameTxt.text!, "bio":self.bioTxt.text!, "web":self.webTxt.text!, "profileImgURL": imgUrl]
                     DBservice.instance.createDBUser(uid: (Auth.auth().currentUser?.uid)!, userData: userInfo)
                     
 

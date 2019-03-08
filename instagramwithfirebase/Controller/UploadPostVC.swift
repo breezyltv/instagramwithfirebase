@@ -8,33 +8,68 @@
 
 import UIKit
 
-class UploadPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class UploadPostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var picImg: UIImageView!
+    
+    @IBOutlet weak var captionTxt: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // add button on the rigth navigation
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Share", style: .plain, target: self, action: #selector(shareWasPressed))
+        captionTxt.delegate = self
         
-        let picTap = UITapGestureRecognizer(target: self, action: #selector(selectImg))
-        picTap.numberOfTapsRequired = 1
+        // declare select image tap
+        let avaTap = UITapGestureRecognizer(target: self, action: #selector(UploadPostVC.loadImg(_:)))
+        avaTap.numberOfTapsRequired = 1
         picImg.isUserInteractionEnabled = true
-        picImg.addGestureRecognizer(picTap)
+        picImg.addGestureRecognizer(avaTap)
     }
     
     @objc func shareWasPressed(){
         
     }
     
-    // func to cal pickerViewController
-    @objc func selectImg() {
+    // call picker to select image
+    @objc func loadImg(_ recognizer:UITapGestureRecognizer) {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .photoLibrary
         picker.allowsEditing = true
         present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        // add button on the right navigation
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Share", style: .plain, target: self, action: #selector(shareWasPressed))
+        
+        // add button on the left navigation
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelWasPressed))
+        
+
+        
+        var selectedImgFromPicker: UIImage?
+        if let editedImg = info[.editedImage] as? UIImage {
+            selectedImgFromPicker = editedImg;
+        }else if let originalImg = info[.originalImage] as? UIImage {
+            selectedImgFromPicker = originalImg;
+        }
+
+        if let selectedImg = selectedImgFromPicker{
+            picImg.image = selectedImg
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    //reload to cancel upload post
+    @objc func cancelWasPressed(){
+        self.viewDidLoad()
     }
 
 }
